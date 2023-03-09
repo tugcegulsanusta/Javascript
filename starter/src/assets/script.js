@@ -1,4 +1,6 @@
-/* Create an array named products which you will use to add all of your product object literals that you create in the next step. */
+/* Create an array named products which you will use to add all of your product 
+object literals that you create in the next step. */
+let products = [productCherry,productStrawberry,productOrange];
 
 /* Create 3 or more product objects using object literal notation 
    Each product should include five properties
@@ -7,15 +9,35 @@
    - quantity: quantity in cart should start at zero (number)
    - productId: unique id for the product (number)
    - image: picture of product (url string)
-*/
-
-/* Images provided in /images folder. All images from Unsplash.com
+   - Images provided in /images folder. All images from Unsplash.com
    - cherry.jpg by Mae Mu
    - orange.jpg by Mae Mu
    - strawberry.jpg by Allec Gomes
 */
+let productCherry={
+  name: "Carton of Cherries",
+  price: 4,
+  quantity:0,
+  productId:100,
+  image:"images/cherry.jpg"
+};
+let productStrawberry={
+  name: "Carton of Strawberries",
+  price: 5,
+  quantity:0,
+  productId:101,
+  image: "images/strawberry.jpg"
+};
+let productOrange={
+  name:"Bag of Oranges",
+  price:10,
+  quantity:0,
+  productId:102,
+  image:"images/orange.jpg"
+};
 
 /* Declare an empty array named cart to hold the items in the cart */
+let cart = [];
 
 /* Create a function named addProductToCart that takes in the product productId as an argument
   - addProductToCart should get the correct product based on the productId
@@ -23,6 +45,12 @@
   - if the product is not already in the cart, add it to the cart
 */
 
+function addProductToCart(productId){
+  let product = products.productId;
+  
+
+
+}
 /* Create a function named increaseQuantity that takes in the productId as an argument
   - increaseQuantity should get the correct product based on the productId
   - increaseQuantity should then increase the product's quantity
